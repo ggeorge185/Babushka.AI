@@ -1,13 +1,12 @@
 [tool.poetry]
-name = "privategpt"
+name = "babushka"
 version = "0.1.0"
 description = ""
 authors = ["Ivan Martinez <ivanmartit@gmail.com>"]
 license = "Apache Version 2.0"
-readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 langchain = "0.0.261"
 gpt4all = "^1.0.3"
 chromadb = "^0.3.26"
