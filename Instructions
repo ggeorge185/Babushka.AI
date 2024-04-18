@@ -1,1 +1,27 @@
 
+1. Firstly make sure to install ollama in your local Desktop and after that download the ollama mistral
+[ ]
+pip install ollama
+ollama run mistral
+
+2. Download the files in this colab to the root of the directory you created
+3. Open your coding environment and run the following code to create an LLM model which behaves like Babushka and provides only food related information.
+[ ]
+!ollama create Babushka -f ./modelfile
+
+4. We need to install certain Libraries for our bot so run the following command to install those libraries directly
+[ ]
+pip install -r requirements.txt
+
+5. Now to upload our data to the bot firstly create an directory called source_documents by running the command on the terminal
+[ ]
+mkdir source_documents
+
+6. Add the dataset to the source_documents folder
+7. Now to feed the data to the bot we need to run the ingest.py file, it will create a db and pycache directory itself.
+[ ]
+python3 ingest.py
+
+8. Once all the documents have been fed run the BabushkaGPT.py
+[ ]
+python3 BabushkaGPT.py
