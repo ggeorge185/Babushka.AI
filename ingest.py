@@ -56,7 +56,7 @@ class MyElmLoader(UnstructuredEmailLoader):
         return doc
 
 
-# Map file extensions to document loaders and their arguments  all of our datasets fall under .csv
+# Map file extensions to document loaders and their arguments
 LOADER_MAPPING = {
     ".csv": (CSVLoader, {}),
     # ".docx": (Docx2txtLoader, {}),
@@ -154,7 +154,7 @@ def main():
     db.persist()
     db = None
 
-    print(f"Ingestion complete! You can now run BabushkaGPT.py to query your documents")
+    print(f"Ingestion complete!")
 
 
 if __name__ == "__main__":
