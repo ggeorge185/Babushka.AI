@@ -50,9 +50,7 @@ def main():
         start = time.time()
         res = qa(query)
         answer, docs = res['result'], [] if args.hide_source else res['source_documents']
-        end = time.time()
-
-        
+        end = time.time()  
         
 
 def parse_arguments():
